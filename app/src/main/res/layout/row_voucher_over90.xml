@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:tools="http://schemas.android.com/tools"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F6F7EB"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="22dp"
+                android:layout_height="match_parent"
+                android:contentDescription=""
+                android:src="@drawable/ic_invoice"
+                tools:ignore="ContentDescription"/>
+
+            <TextView
+                android:id="@+id/lbl_inv_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="0.19"
+                android:text="ID: "
+                android:textAlignment="gravity"
+                android:textColor="@android:color/black"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlHardcoded"/>
+
+            <TextView
+                android:id="@+id/invoice_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="0.93"
+                android:text=""
+                android:textAlignment="gravity"
+                android:textColor="@android:color/black"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded"/>
+
+            <TextView
+                android:id="@+id/lbl_inv_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="0.35"
+                android:text="Date: "
+                android:textAlignment="gravity"
+                android:textColor="@android:color/black"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlHardcoded"/>
+
+            <TextView
+                android:id="@+id/invoice_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:text=""
+                android:textAlignment="gravity"
+                android:textColor="@android:color/black"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded"/>
+
+            <TextView
+                android:id="@+id/lbl_inv_age"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="0.30"
+                android:text="Age:"
+                android:textAlignment="gravity"
+                android:textColor="@android:color/black"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlHardcoded"/>
+
+            <TextView
+                android:id="@+id/invoice_age"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="0.36"
+                android:text=""
+                android:textAlignment="gravity"
+                android:textColor="@android:color/black"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lbl_inv_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total: "
+                android:textColor="@android:color/black"
+                android:textSize="11sp"
+                tools:ignore="HardcodedText,RtlHardcoded,SmallSp"/>
+
+            <TextView
+                android:id="@+id/invoice_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.21"
+                android:maxWidth="130dp"
+                android:padding="5dp"
+                android:text="@string/voucher_total"
+                android:textColor="@android:color/holo_red_light"
+                android:textColorLink="@color/colorAccent"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/lbl_inv_paid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15px"
+                android:text="Paid: "
+                android:textColor="@android:color/black"
+                android:textSize="11sp"
+                tools:ignore="HardcodedText,PxUsage,RtlHardcoded,RtlSymmetry,SmallSp"/>
+
+            <TextView
+                android:id="@+id/invoice_paid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.28"
+                android:padding="5dp"
+                android:text="@string/voucher_total"
+                android:textColorLink="@android:color/holo_green_dark"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/lbl_inv_due"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15px"
+                android:text="Due:"
+                android:textColor="@android:color/black"
+                android:textSize="11sp"
+                tools:ignore="HardcodedText,PxUsage,RtlHardcoded,RtlSymmetry,SmallSp"/>
+
+            <TextView
+                android:id="@+id/invoice_due"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.23"
+                android:padding="5dp"
+                android:text="@string/voucher_total"
+                android:textColor="@color/colorAccent"
+                android:textColorLink="@color/cardview_shadow_start_color"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

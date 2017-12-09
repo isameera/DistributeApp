@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Distribute App</string>
+    <string name="api_url"><![CDATA[http://127.0.0.1/distribution_restful_api/resources/total-oustanding/]]></string>
+    <string name="voucher_date">2018-08-29</string>
+    <string name="voucher_type">Invoice</string>
+    <string name="number_of_vouchers">10000</string>
+    <string name="voucher_total">2000</string>
+    <string name="voucher_id">voucher_id</string>
+    <string name="lable_number">Issued Quantity</string>
+    <string name="lable_value">Total Value</string>
+    <string name="fa_icon_areachart">&#xf1fe;</string>
+    <string name="od_level_one">Invoices By Due Days Between 0 to 7</string>
+    <string name="od_level_two">Invoices By Due Day Between 8 to 60</string>
+    <string name="od_level_three">Invoices By Due Day Between 61 to 75</string>
+    <string name="od_level_four">Invoices By Due Day Between 76 to 90</string>
+    <string name="od_level_five">Invoices By Due Over 90 Days</string>
+
+    <string name="show_dialog">Show dialog</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login_label">Login</string>
+    <string name="success_login_msg">Login successful</string>
+    <string name="error_login_msg">Please fill any empty fields</string>
+
+    <string name="prompt_payment">Select Payment Method</string>
+    <string-array name="payment_type">
+        <item>Cash</item>
+        <item>Cheque</item>
+    </string-array>
+
+    <string-array name="countries_array">
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>American Samoa</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>Anguilla</item>
+        <item>Antarctica</item>
+    </string-array>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+</resources>

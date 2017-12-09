@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/background_2"
+                tools:context="com.exoncloud.mobi.distributeapp.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10px"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/loged_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.83"
+            android:text="Name"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/daily_number"
+            android:layout_width="49dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.14"
+            android:text="10"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText"/>
+
+        <Button
+            android:id="@+id/log_out_button"
+            android:layout_width="69dp"
+            android:layout_height="23dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorAccent"
+            android:text="Logout"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp"
+        android:weightSum="1">
+
+        <AutoCompleteTextView
+            android:id="@+id/main_customer_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:hint="Search by Customer Name"
+            android:text=""
+            android:textSize="18sp"
+            tools:ignore="HardcodedText"
+            />
+
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/auto_pay"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_xml_btn_yellow"
+                android:text="Auto Pay"
+                android:visibility="gone"
+                tools:ignore="HardcodedText"/>
+
+
+            //------------------------------ Over
+            90-----------------------------------------------------------------
+
+            <!--<TextView-->
+            <!--android:id="@+id/textView5"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/activity_horizontal_margin"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="@string/od_level_five"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textStyle="bold"/>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:background="#DAF7A6"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/lblfi_inv_total"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:text="Total: "-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="11sp"-->
+            <!--tools:ignore="HardcodedText,RtlHardcoded,SmallSp"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/fifth_total"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.21"-->
+            <!--android:maxWidth="130dp"-->
+            <!--android:padding="5dp"-->
+            <!--android:textColor="@android:color/holo_red_light"-->
+            <!--android:textColorLink="@color/colorAccent"-->
+            <!--android:textSize="12sp"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/lblfi_inv_paid"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="15px"-->
+            <!--android:text="Paid: "-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="11sp"-->
+            <!--tools:ignore="HardcodedText,PxUsage,RtlHardcoded,RtlSymmetry,SmallSp"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/fifth_paid"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.28"-->
+            <!--android:padding="5dp"-->
+            <!--android:textColorLink="@android:color/holo_green_dark"-->
+            <!--android:textSize="12sp"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/lblfi_inv_due"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="15px"-->
+            <!--android:text="Due:"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="11sp"-->
+            <!--tools:ignore="HardcodedText,PxUsage,RtlHardcoded,RtlSymmetry,SmallSp"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/fifth_due"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.23"-->
+            <!--android:padding="5dp"-->
+            <!--android:textColor="@color/colorAccent"-->
+            <!--android:textColorLink="@color/cardview_shadow_start_color"-->
+            <!--android:textSize="12sp"/>-->
+
+            <!--</LinearLayout>-->
+
+            <TextView
+                android:id="@+id/customer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="1dp"
+                android:textAlignment="center"
+                android:textColor="#4B4B4B"
+                android:textSize="17sp"
+                android:textStyle="bold|italic"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/daysOver90"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/days08to60"
+                android:minHeight="0dp"
+                tools:ignore="ObsoleteLayoutParam"/>
+
+
+            //------------------------------ 76 to
+            90-----------------------------------------------------------------
+
+
+            <!--<TextView-->
+            <!--android:id="@+id/textView4"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/activity_horizontal_margin"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="@string/od_level_four"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textStyle="bold"/>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:background="#DAF7A6"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/lblfo_inv_total"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:text="Total: "-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="11sp"-->
+            <!--tools:ignore="HardcodedText,RtlHardcoded,SmallSp"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/fourth_total"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.21"-->
+            <!--android:maxWidth="130dp"-->
+            <!--android:padding="5dp"-->
+            <!--android:textColor="@android:color/holo_red_light"-->
+            <!--android:textColorLink="@color/colorAccent"-->
+            <!--android:textSize="12sp"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/lblfo_inv_paid"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="15px"-->
+            <!--android:text="Paid: "-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="11sp"-->
+            <!--tools:ignore="HardcodedText,PxUsage,RtlHardcoded,RtlSymmetry,SmallSp"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/fourth_paid"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.28"-->
+            <!--android:padding="5dp"-->
+            <!--android:textColorLink="@android:color/holo_green_dark"-->
+            <!--android:textSize="12sp"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/lblfo_inv_due"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="15px"-->
+            <!--android:text="Due:"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="11sp"-->
+            <!--tools:ignore="HardcodedText,PxUsage,RtlHardcoded,RtlSymmetry,SmallSp"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/fourth_due"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.23"-->
+            <!--android:padding="5dp"-->
+            <!--android:textColor="@color/colorAccent"-->
+            <!--android:textColorLink="@color/cardview_shadow_start_color"-->
+            <!--android:textSize="12sp"/>-->
+
+            <!--</LinearLayout>-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/days76to90"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/days08to60"
+                android:minHeight="0dp"
+                tools:ignore="ObsoleteLayoutParam"/>
+
+            //-------------------------------61 to
+            75-----------------------------------------------------------------
+
+            <!--<TextView-->
+            <!--android:id="@+id/textView3"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/activity_horizontal_margin"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="@string/od_level_three"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textStyle="bold"/>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:background="#DAF7A6"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/lblt_inv_total"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:text="Total: "-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="11sp"-->
+            <!--tools:ignore="HardcodedText,RtlHardcoded,SmallSp"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/third_total"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.21"-->
+            <!--android:maxWidth="130dp"-->
+            <!--android:padding="5dp"-->
+            <!--android:textColor="@android:color/holo_red_light"-->
+            <!--android:textColorLink="@color/colorAccent"-->
+            <!--android:textSize="12sp"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/lblt_inv_paid"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="15px"-->
+            <!--android:text="Paid: "-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="11sp"-->
+            <!--tools:ignore="HardcodedText,PxUsage,RtlHardcoded,RtlSymmetry,SmallSp"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/third_paid"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.28"-->
+            <!--android:padding="5dp"-->
+            <!--android:textColorLink="@android:color/holo_green_dark"-->
+            <!--android:textSize="12sp"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/lblt_inv_due"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="15px"-->
+            <!--android:text="Due:"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="11sp"-->
+            <!--tools:ignore="HardcodedText,PxUsage,RtlHardcoded,RtlSymmetry,SmallSp"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/third_due"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.23"-->
+            <!--android:padding="5dp"-->
+            <!--android:textColor="@color/colorAccent"-->
+            <!--android:textColorLink="@color/cardview_shadow_start_color"-->
+            <!--android:textSize="12sp"/>-->
+
+            <!--</LinearLayout>-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/days61to75"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/days08to60"
+                android:minHeight="0dp"
+                tools:ignore="ObsoleteLayoutParam"/>
+
+            //-------------------------------08 to
+            60-----------------------------------------------------------
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/activity_horizontal_margin"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="@string/od_level_two"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textStyle="bold"-->
+            <!--/>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:background="#DAF7A6"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/lbls_inv_total"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:text="Total: "-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="11sp"-->
+            <!--tools:ignore="HardcodedText,RtlHardcoded,SmallSp"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/second_total"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.21"-->
+            <!--android:maxWidth="130dp"-->
+            <!--android:padding="5dp"-->
+            <!--android:textColor="@android:color/holo_red_light"-->
+            <!--android:textColorLink="@color/colorAccent"-->
+            <!--android:textSize="12sp"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/lbls_inv_paid"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="15px"-->
+            <!--android:text="Paid: "-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="11sp"-->
+            <!--tools:ignore="HardcodedText,PxUsage,RtlHardcoded,RtlSymmetry,SmallSp"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/second_paid"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.28"-->
+            <!--android:padding="5dp"-->
+            <!--android:textColorLink="@android:color/holo_green_dark"-->
+            <!--android:textSize="12sp"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/lbls_inv_due"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="15px"-->
+            <!--android:text="Due:"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="11sp"-->
+            <!--tools:ignore="HardcodedText,PxUsage,RtlHardcoded,RtlSymmetry,SmallSp"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/second_due"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.23"-->
+            <!--android:padding="5dp"-->
+            <!--android:textColor="@color/colorAccent"-->
+            <!--android:textColorLink="@color/cardview_shadow_start_color"-->
+            <!--android:textSize="12sp"/>-->
+
+            <!--</LinearLayout>-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/days08to60"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="0dp"/>
+
+
+            //------------------------------0 to
+            07------------------------------------------------------
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="@string/od_level_one"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textStyle="bold"/>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:background="#DAF7A6"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/lblf_inv_total"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:text="Total: "-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="11sp"-->
+            <!--tools:ignore="HardcodedText,RtlHardcoded,SmallSp"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/first_total"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.21"-->
+            <!--android:maxWidth="130dp"-->
+            <!--android:padding="5dp"-->
+            <!--android:textColor="@android:color/holo_red_light"-->
+            <!--android:textColorLink="@color/colorAccent"-->
+            <!--android:textSize="12sp"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/lblf_inv_paid"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="15px"-->
+            <!--android:text="Paid: "-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="11sp"-->
+            <!--tools:ignore="HardcodedText,PxUsage,RtlHardcoded,RtlSymmetry,SmallSp"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/first_paid"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.28"-->
+            <!--android:padding="5dp"-->
+            <!--android:textColorLink="@android:color/holo_green_dark"-->
+            <!--android:textSize="12sp"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/lblf_inv_due"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="15px"-->
+            <!--android:text="Due:"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="11sp"-->
+            <!--tools:ignore="HardcodedText,PxUsage,RtlHardcoded,RtlSymmetry,SmallSp"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/first_due"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.23"-->
+            <!--android:padding="5dp"-->
+            <!--android:textColor="@color/colorAccent"-->
+            <!--android:textColorLink="@color/cardview_shadow_start_color"-->
+            <!--android:textSize="12sp"/>-->
+
+            <!--</LinearLayout>-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/days0to07"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

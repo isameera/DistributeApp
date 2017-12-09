@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:tools="http://schemas.android.com/tools"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/receipt_customer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Customer Name"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="17sp"
+            android:textStyle="bold|italic"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F6F7EB"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="3dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:id="@+id/lbl_inv_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="0.19"
+                    android:text="Customer's Total Outstanding Details"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText,RtlHardcoded"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lbl_inv_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total: "
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp"
+                    tools:ignore="HardcodedText,RtlHardcoded,SmallSp"/>
+
+                <TextView
+                    android:id="@+id/invoice_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.21"
+                    android:maxWidth="130dp"
+                    android:padding="5dp"
+                    android:text="@string/voucher_total"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textColorLink="@color/colorAccent"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/lbl_inv_paid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15px"
+                    android:text="Paid: "
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp"
+                    tools:ignore="HardcodedText,PxUsage,RtlHardcoded,RtlSymmetry,SmallSp"/>
+
+                <TextView
+                    android:id="@+id/invoice_paid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.28"
+                    android:padding="5dp"
+                    android:text="@string/voucher_total"
+                    android:textColorLink="@android:color/holo_green_dark"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/lbl_inv_due"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15px"
+                    android:text="Due:"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp"
+                    tools:ignore="HardcodedText,PxUsage,RtlHardcoded,RtlSymmetry,SmallSp"/>
+
+                <TextView
+                    android:id="@+id/invoice_due"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.23"
+                    android:padding="5dp"
+                    android:text="@string/voucher_total"
+                    android:textColor="@color/colorAccent"
+                    android:textColorLink="@color/cardview_shadow_start_color"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/receipt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.34"
+                android:text="Make a Payment"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText"/>
+
+
+            <RadioGroup
+                android:id="@+id/receipt_rg_pm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.34"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/receipt_pm_cash"
+                    android:layout_width="162dp"
+                    android:layout_height="wrap_content"
+                    android:text="Cash"
+                    android:theme="@style/MyRadioButton"/>
+
+                <RadioButton
+                    android:id="@+id/receipt_pm_cheque"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cheque"
+                    android:theme="@style/MyRadioButton"/>
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/receipt_current_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Enter Current Payment"
+                android:inputType="number"
+                android:textSize="13sp"
+                android:visibility="gone"
+                tools:ignore="HardcodedText"/>
+
+            <RadioGroup
+                android:id="@+id/receipt_rg_ct"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.34"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:id="@+id/receipt_ct_cash"
+                    android:layout_width="114dp"
+                    android:layout_height="wrap_content"
+                    android:text="Cash"
+                    android:theme="@style/MyRadioButton"/>
+
+                <RadioButton
+                    android:id="@+id/receipt_ct_acpay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="AC Pay"
+                    android:theme="@style/MyRadioButton"/>
+
+                <RadioButton
+                    android:id="@+id/receipt_ct_cross"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cross"
+                    android:theme="@style/MyRadioButton"/>
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/receipt_cheque_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Cheque Number"
+                android:inputType="number"
+                android:textSize="13sp"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/receipt_cheque_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Select Cheque Date"
+                android:textSize="13sp"
+                android:visibility="gone"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/receipt_cheque_bank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.34"
+                android:hint="Select Bank"
+                android:textSize="13sp"
+                android:visibility="gone"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/receipt_cheque_bank_branch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Select Bank Branch"
+                android:textSize="13sp"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/receipt_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorAccent"
+                android:text="Pay"
+                android:textColor="@android:color/white"
+                android:visibility="gone"
+                tools:ignore="HardcodedText"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

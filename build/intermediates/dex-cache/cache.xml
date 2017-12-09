@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sameera\.gradle\caches\modules-2\files-2.1\com.googlecode.json-simple\json-simple\1.1\5e303a03d04e6788dddfa3655272580ae0fc13bb\json-simple-1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="5e303a03d04e6788dddfa3655272580ae0fc13bb">
+        <dex dex="G:\Exon\Mobile\bitbucket\DistributeApp\app\build\intermediates\pre-dexed\debug\json-simple-1.1_12dca2a15f300e25c603f9c34fe8d8bc7ac2f478.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\Exon\Mobile\bitbucket\DistributeApp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="974b518c56cef2c20e823a591b2cd8d39ea80b3c">
+        <dex dex="G:\Exon\Mobile\bitbucket\DistributeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_f75485b4b2c17cf306b5631adf39c44e8e7b9419\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\Exon\Mobile\bitbucket\DistributeApp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="G:\Exon\Mobile\bitbucket\DistributeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_222f2dd2dd2b6f5a302cc5b4414509b8b0cadf9d\classes.dex" />
+    </item>
+
+</items>
